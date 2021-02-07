@@ -583,3 +583,38 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
+
+/* Blocks */
+
+.block {
+  --padding-vertical: 6rem;
+  padding-bottom: var(--padding-vertical);
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block--dark {
+  background-color: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-left {
+  padding: calc(--padding-vertical + 6rem);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.block--skewed-right {
+  padding: calc(--padding-vertical + 6rem);
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
