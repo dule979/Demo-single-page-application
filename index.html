@@ -13,74 +13,44 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block">
       <header class="block__header">
-        <h2>User-Friendly Control Panel</h2>
+        <h2>What our Customer are Saying</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+          ullam.
+        </p>
       </header>
-      <div class="container grid grid--cols-2">
-        <picture class="block-showcase__image">
-          <source
-            type="image/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png"
-          />
-          <img src="/images/ipad.png" alt="" / >
-        </picture>
-        <ul class="list">
-          <li>
+      <div class="card testimonial grid grid--cols-2">
+        <div class="testimonial__image">
+          <img src="./images/testimonial.jpg" alt="A smilling happy customer" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon-small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            explicabo magnam facilis iure laborum culpa officiis autem animi ea
+            quae, ipsa aspernatur dignissimos, fugiat excepturi nisi, sapiente
+            quo doloribus blanditiis.
+          </p>
+          <footer>
             <div class="media">
               <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#snap"></use>
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="images/sprite.svg#line"></use>
                 </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Easy Start & Menaged Updates</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum, illum laboriosam! Minus porro, ipsa voluptate beatae
-                  illum quae cum! Corporis facilis asperiores natus accusantium
-                  reiciendis ut dolorum molestias facere temporibus!
-                </p>
+                <h3 class="media__title quote__author">John Smith</h3>
+                <p class="quote__organization">ABC Company</p>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#growth"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Staging, Git & WP-CLI</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum, illum laboriosam! Minus porro, ipsa voluptate beatae
-                  illum quae cum! Corporis facilis asperiores natus accusantium
-                  reiciendis ut dolorum molestias facere temporibus!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum, illum laboriosam! Minus porro, ipsa voluptate beatae
-                  illum quae cum! Corporis facilis asperiores natus accusantium
-                  reiciendis ut dolorum molestias facere temporibus!
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </footer>
+        </blockquote>
       </div>
     </section>
     <script src="js/main.js"></script>
